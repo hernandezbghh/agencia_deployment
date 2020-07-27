@@ -41,9 +41,8 @@ app.use("/", routes());
 const host= process.env.HOST || "0.0.0.0";
 const port= process.env.PORT || 3000;
 
-app.listen(port, host, function(){
-    console.log("El servidor se inicio en el puerto "+port+" y su host es el "+host);
-});
+console.log("El servidor se inicio en el puerto "+port+" y su host es el "+host);
+app.listen(port, host);
 
 /*
 //Importar el archivo con la configuración de la base de datos
